@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title%></title>
+    <%- include('partials/head')%>
+    <!-- HOME CSS STYLES-->
+    <link rel="stylesheet" href="styles/home.css">
+</head>
+<body>
+    <div class="svg-line-container">
+        <svg width="332" height="1954" viewBox="0 0 332 1954" fill="none" xmlns="http://www.w3.org/2000/svg" id="scroll-line">
+            <path d="M168.285 0V280L101.785 253.5L122.285 301V353L63.7853 324V362.5L122.285 406.5C120.785 435 127.885 491.6 168.285 490V1123.5L238.785 1101.5L213.285 1150.5V1203.5L270.285 1177V1217.5L213.285 1255C213.619 1283.67 205.085 1341.2 168.285 1342V1805.5C155.357 1809.33 122.1 1821.8 92.4999 1841C83.8332 1846.83 64.3999 1858.5 55.9999 1858.5L34.4999 1812.5C34.1666 1809.17 31.2999 1803.8 22.4999 1809C19.3332 1809.67 13.0999 1812.7 13.4999 1819.5L22.4999 1877.5L7.49993 1887C3.83326 1889.83 -1.30007 1895.5 7.49993 1895.5H16.9999L25.9999 1891L30.4999 1895.5L103.5 1891L39.4999 1935.5C32.4999 1940 22.6999 1949.3 39.4999 1950.5C48.1666 1951.5 62.9999 1953.5 77.9999 1945.5L207.5 1872C220.167 1868.83 252.3 1858.2 279.5 1841C283 1838.83 293.1 1830.1 305.5 1812.5C315.9 1799.7 291 1800.67 279.5 1802.5L326.5 1761.5C330 1755.5 333 1745.3 317 1752.5C313.167 1753.83 302.6 1758.6 291 1767L244.5 1802.5C235.334 1796.5 214.5 1786 204.5 1792L184.5 1799.5" stroke="#F9F9F9" stroke-width="5"/>
+        </svg>                                
+    </div>
+    <%- include('partials/nav') %>
+    <section class="hero-container">
+        <div class="hero-left gsap-left-hero">
+            <h1 class="hero-title gsap-hero-title">Travel With Us</h1>
+            <p class="hero-text gsap-hero-text">Let's discover the most magical places together</p>
+            <button class="hero-button gsap-hero-button">Start my journey</button> 
+        </div>
+        <div class="hero-right gsap-right-hero">
+            <h2 class="hero-subtitle gsap-hero-subtitle">Are you an adventurer?</h2>
+            <ul class="adventure-list gsap-hero-list">
+                <li class="adventure-item gsap-hero-item">
+                    <h4>Surf</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </li>
+                <li class="adventure-item gsap-hero-item">
+                    <h4>Snowboard</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </li>
+                <li class="adventure-item gsap-hero-item">
+                    <h4>Hike</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </li>
+                <li class="adventure-item gsap-hero-item">
+                    <h4>Parachute</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="container-fluid activities-section" id="activities">
+        <div class="row bg-dark text-white p-20 activities-container">
+            <p class="background-text-big">Adventure</p>
+            <p class="background-text-medium">Challenges Adventure</p>
+            <p class="background-text-small">Fun</p>
+            <p class="background-text-medium-bottom">Challenges Good Times</p>
+            <div class="col-sm-6">
+                <div class="activity-item activity-item-left" id="surf">
+                    <h3 class="act-title">Surf</h3>    
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="activity-item activity-item-right" id="snowboard">
+                    <h3 class="act-title">Snowboard</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="activity-item activity-item-left"id="hike">
+                    <h3 class="act-title">Hike</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="activity-item activity-item-right" id="parachute">
+                    <h3 class="act-title">Parachute</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <%- include('partials/footer') %>
+    <!-- HOME PAGE ANIMATIONS -->
+    <script src="scripts/home.js" type="text/javascript"></script>
+</body>
+</html>

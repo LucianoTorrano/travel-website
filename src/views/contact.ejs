@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+    <%- include('partials/head') %>
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+    <%- include('partials/nav')%>
+    <section class="contact-container">
+        <div class="container">
+            <div class="col">
+                <div class="card">
+                    <div class="text-white text-center title">
+                        <h3>Contact Us</h3>
+                    </div>
+                    <div class="card-body">
+                        <form class="form-container contact_form">
+                            <div class="form-group">
+                                <p class="name text-white label" >Name</p>
+                                <input type="text" id="name" class="form-control" autofocus required>
+                            </div>
+                            <div class="form-group">
+                                <p class="email text-white label">Email <span>(example@gmail.com)</span></p>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <p class="name text-white label">Message</p>
+                                <textarea class="form-control" name="" id="message" cols="30" rows="10" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <%- include('partials/footer')%>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="scripts/contact.js"></script>
+</body>
+</html>

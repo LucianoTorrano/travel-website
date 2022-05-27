@@ -1,0 +1,208 @@
+.svg-line-container {
+  height: 200%;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  z-index: 200;
+}
+
+.svg-line-container svg {
+  padding-top: 17%;
+  display: inline-block;
+}
+
+.hero-container {
+  min-height: 95vh;
+  width: 100%;
+  overflow: hidden;
+  background: url("../img/hero-background.jpg");
+  background-position: center;
+  background-size: cover;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
+  z-index: 0;
+}
+
+.hero-container .hero-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.hero-container .hero-left .hero-title {
+  color: #cacaca;
+  font-size: 100px;
+  font-weight: 400;
+  margin: 50px 0 20px 0;
+}
+
+.hero-container .hero-left .hero-text {
+  color: #cacaca;
+  font-size: 25px;
+}
+
+.hero-container .hero-left .hero-button {
+  color: #cacaca;
+  height: 70px;
+  width: 300px;
+  font-size: 25px;
+  padding: 15px;
+  background-color: #272727;
+  border: none;
+  margin-top: 80px;
+  z-index: 300;
+}
+
+.hero-container .hero-right {
+  height: 60%;
+  width: 50%;
+  background-color: rgba(177, 177, 177, 0.5);
+  z-index: 20;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  color: #000000;
+}
+
+.hero-container .hero-right .hero-subtitle {
+  text-align: center;
+  font-weight: 400;
+  font-size: 50px;
+  margin: 30px;
+}
+
+.hero-container .hero-right .adventure-list {
+  list-style: none;
+}
+
+.hero-container .hero-right .adventure-list .adventure-item {
+  padding: 10px;
+}
+
+.hero-container .hero-right .adventure-list h4 {
+  font-size: 30px;
+}
+
+.hero-container .hero-right .adventure-list p {
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.activities-section {
+  width: 100%;
+}
+
+.activities-section .activities-container {
+  min-height: 100vh;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.activities-section .activities-container .background-text-big {
+  display: block;
+  width: 60vw;
+  font-family: 'Alex Brush', cursive;
+  position: absolute;
+  color: rgba(168, 168, 168, 0.1);
+  font-size: 250px;
+  top: 100vh;
+  left: 5vw;
+}
+
+.activities-section .activities-container .background-text-medium {
+  display: block;
+  width: 65vw;
+  font-family: 'Alex Brush', cursive;
+  position: absolute;
+  color: rgba(168, 168, 168, 0.1);
+  font-size: 150px;
+  top: 130vh;
+  left: 30vw;
+}
+
+.activities-section .activities-container .background-text-small {
+  display: block;
+  width: 60vw;
+  font-family: 'Alex Brush', cursive;
+  position: absolute;
+  color: rgba(168, 168, 168, 0.1);
+  font-size: 100px;
+  top: 150vh;
+  left: 35vw;
+}
+
+.activities-section .activities-container .background-text-medium-bottom {
+  display: block;
+  width: 85vw;
+  font-family: 'Alex Brush', cursive;
+  position: absolute;
+  color: rgba(168, 168, 168, 0.1);
+  font-size: 150px;
+  top: 170vh;
+  left: 10vw;
+}
+
+.activities-section .activities-container .activity-item {
+  height: 400px;
+  width: 400px;
+  margin: auto;
+  margin-top: 50px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.activities-section .activities-container .activity-item .act-title {
+  padding: 20px;
+}
+
+.activities-section .activities-container .activity-item p {
+  padding: 20px;
+  font-size: 15px;
+}
+
+.activities-section .activities-container #surf {
+  background: url("../img/surf.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.activities-section .activities-container #snowboard {
+  background: url("../img/snowboard.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.activities-section .activities-container #hike {
+  background: url("../img/hike.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.activities-section .activities-container #parachute {
+  background: url("../img/parachute.jpg");
+  background-size: cover;
+  background-position: center;
+}
+/*# sourceMappingURL=home.css.map */

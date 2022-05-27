@@ -1,0 +1,185 @@
+.about-hero {
+  min-height: 95vh;
+  width: 100%;
+  background: url("../img/about-background.jpg");
+  background-position: center;
+  background-size: cover;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  position: relative;
+  color: #e4e4e4;
+}
+
+.about-hero .phrase-svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-45%, -50%);
+          transform: translate(-45%, -50%);
+  z-index: 200;
+}
+
+.about-hero .left {
+  height: 100%;
+  background-color: rgba(98, 96, 96, 0.8);
+  padding: 50px;
+  padding-top: 20vh;
+}
+
+.about-hero .left .left-container {
+  width: 70%;
+}
+
+.about-hero .left .left-container .title {
+  font-size: 60px;
+  font-weight: 200;
+  padding-bottom: 20px;
+}
+
+.about-hero .left .left-container .about-text {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.about-hero .right {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  bottom: 0%;
+  right: 0%;
+  height: 30vh;
+  width: 80vw;
+  background-color: rgba(85, 78, 78, 0.87);
+  text-align: center;
+}
+
+.about-hero .right .phrase {
+  font-family: 'Alex Brush', cursive;
+  font-size: 60px;
+  font-weight: 100;
+}
+
+.recomendation {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #554e4e;
+  position: relative;
+}
+
+.recomendation .bg-square-big {
+  height: 500px;
+  width: 560px;
+  background-color: rgba(238, 238, 238, 0.1);
+  position: absolute;
+  top: 30%;
+  left: 50%;
+}
+
+.recomendation .bg-square-medium {
+  height: 400px;
+  width: 460px;
+  background-color: rgba(238, 238, 238, 0.1);
+  position: absolute;
+  top: 63%;
+  left: 30%;
+}
+
+.recomendation .bg-square-small {
+  height: 210px;
+  width: 230px;
+  background-color: rgba(238, 238, 238, 0.1);
+  position: absolute;
+  top: 80%;
+  left: 60%;
+}
+
+.recomendation .title {
+  font-size: 60px;
+  text-align: center;
+  color: #e4e4e4;
+  padding: 50px 0;
+  letter-spacing: 1px;
+}
+
+.recomendation .recomendation-list {
+  min-height: 90vh;
+  width: 100%;
+  padding: 0 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  overflow: hidden;
+}
+
+.recomendation .recomendation-list .recomendation-item {
+  height: 500px;
+  width: 350px;
+  font-size: 18px;
+  margin: 20px;
+  background-color: rgba(26, 26, 26, 0.8);
+  color: #e4e4e4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: relative;
+  border-radius: 5px;
+}
+
+.recomendation .recomendation-list .recomendation-item .person-img {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.recomendation .recomendation-list .recomendation-item .person-img img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.recomendation .recomendation-list .recomendation-item .recomendation-text {
+  padding: 40px 25px 0 25px;
+  text-align: center;
+}
+
+.recomendation .recomendation-list .recomendation-item .person-name {
+  font-size: 15px;
+  position: absolute;
+  padding: 8px 15px;
+  bottom: 0;
+  right: 0;
+}
+
+.recomendation .recomendation-list #itemTwo {
+  -webkit-transform: translateY(-90px);
+          transform: translateY(-90px);
+}
+/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,148 @@
+$primary-color:#554e4e;
+$secondary-color:#626060;
+$text-color:#e4e4e4;
+$recomendation-item-background:#1a1a1a;
+$bg-square: #eeeeee;
+
+.about-hero{
+    min-height: 95vh;
+    width: 100%;
+    background: url('../img/about-background.jpg');
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+    color: $text-color;
+    .phrase-svg{
+        position:absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-45%,-50%);
+        z-index: 200;
+    }
+    .left{
+        height: 100%;
+        background-color: rgba($secondary-color , $alpha: 0.8);
+        padding: 50px;
+        padding-top: 20vh;
+        .left-container{
+            width: 70%;
+            .title{
+                font-size: 60px;
+                font-weight: 200;
+                padding-bottom: 20px;
+            }
+            .about-text{
+                font-size: 20px;
+                font-weight: 200; 
+            }
+        }
+    }
+    .right{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        bottom: 0%;
+        right: 0%;
+        height: 30vh;
+        width: 80vw;
+        background-color: rgba($primary-color,0.87);
+        text-align: center;
+        .phrase{
+            font-family: 'Alex Brush', cursive;
+            font-size: 60px;
+            font-weight: 100;
+        }
+    }
+}
+
+.recomendation{
+    min-height: 100vh;
+    width: 100%;
+    background-color: $primary-color;
+    position: relative;
+    .bg-square-big{
+        height: 500px;
+        width: 560px;
+        background-color: rgba($bg-square,0.1);
+        position: absolute;
+        top: 30%;
+        left: 50%;
+    }
+    .bg-square-medium{
+        height: 400px;
+        width: 460px;
+        background-color: rgba($bg-square,0.1);
+        position: absolute;
+        top: 63%;
+        left: 30%;
+    }
+    .bg-square-small{
+        height: 210px;
+        width: 230px;
+        background-color: rgba($bg-square,0.1);  
+        position: absolute;
+        top: 80%;
+        left: 60%;
+    }
+    .title{
+        font-size: 60px;
+        text-align: center;
+        color: $text-color;
+        padding: 50px 0;
+        letter-spacing:  1px;
+    }
+    .recomendation-list{
+        min-height: 90vh;
+        width: 100%;
+        padding: 0 10%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+        overflow: hidden;
+        .recomendation-item{
+            height: 500px;
+            width: 350px;
+            font-size: 18px;
+            margin: 20px;
+            background-color: rgba($recomendation-item-background, 0.8);
+            color: $text-color;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            position: relative;
+            border-radius: 5px;
+            .person-img {
+                text-align: center;
+                padding: 30px 0;
+                img{
+                height: 150px;
+                width: 150px;
+                border-radius: 50%;
+                }
+            }
+            .recomendation-text{
+                padding: 40px 25px 0 25px;
+                text-align: center;
+            }
+            .person-name{
+                font-size: 15px;
+                position: absolute;
+                padding: 8px 15px;
+                bottom: 0;
+                right: 0;
+            }
+        }
+        #itemTwo{
+            transform: translateY(-90px);
+        }
+
+    }
+
+}
+
